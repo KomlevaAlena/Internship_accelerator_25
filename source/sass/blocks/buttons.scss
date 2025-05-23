@@ -1,0 +1,434 @@
+.toggle {
+  display: block;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-default-white;
+  color: $color-blue;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    color: $color-default-white;
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-default-white;
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-disabled;
+    outline: none;
+    border: 1px solid transparent;
+  }
+}
+
+.button-menu {
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: $color-blue;
+  color: $color-default-white;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus,
+  &:focus-visible {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.1;
+    color: $color-disabled;
+  }
+}
+
+.button-description {
+  display: block;
+  padding: 16px 17px 14px 21px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+
+  @media (min-width: $vp-768) {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 21px 31px 21px 30px;
+  }
+}
+
+.button-svg-wrapper {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 4px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: $color-blue;
+  color: $color-default-white;
+  width: 34px;
+  height: 34px;
+
+  svg {
+    display: block;
+    position: absolute;
+    content: "";
+    color: currentColor;
+    width: 10px;
+    height: 10px;
+    top: 11px;
+    left: 11px;
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $vp-768) {
+    width: 46px;
+    height: 46px;
+
+    svg {
+      top: 16px;
+      left: 17px;
+    }
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: max-content;
+  padding: 0;
+  border: 1px solid $color-blue;
+  border-radius: 30px;
+  background-color: transparent;
+  color: $color-blue;
+  cursor: pointer;
+  user-select: none;
+  font-size: 12px;
+  line-height: 12px;
+
+  &:hover {
+    color: $color-default-white;
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    .button-description {
+      color: $color-default-white;
+      outline: none;
+      border: none;
+    }
+
+    .button-svg-wrapper {
+      background-color: $color-default-white;
+      color: $color-blue;
+      outline: none;
+      border: none;
+
+      svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: $color-default-white;
+    color: $color-blue;
+    outline: none;
+    border: 1px solid $color-blue;
+
+    .button-description {
+      color: $color-blue;
+      outline: none;
+      border: none;
+    }
+
+    .button-svg-wrapper {
+      background-color: $color-blue;
+      color: $color-default-white;
+      outline: none;
+      border: none;
+
+      svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    .button-description {
+      color: $color-default-white;
+      opacity: 0.7;
+      outline: none;
+      border: none;
+    }
+
+    .button-svg-wrapper {
+      background-color: $color-default-white;
+      color: $color-blue;
+      outline: none;
+      border: none;
+
+      svg {
+        transform: rotate(0deg);
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-disabled;
+    background-color: $color-default-white;
+    outline: none;
+    border: 1px solid $color-disabled;
+
+    .button-description {
+      color: $color-disabled;
+      outline: none;
+      border: none;
+    }
+
+    .button-svg-wrapper {
+      color: $color-default-white;
+      background-color: $color-disabled;
+      outline: none;
+      border: none;
+
+      svg {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.toggle-blue {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  color: $color-default-white;
+  background-color: $color-blue;
+  cursor: pointer;
+  user-select: none;
+
+  svg {
+    display: block;
+    position: absolute;
+    content: "";
+    color: currentColor;
+    width: 10px;
+    height: 10px;
+    top: 9px;
+    left: 9px;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    background-color: $color-default-white;
+    color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-default-white;
+    background-color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    svg {
+      transform: rotate(0deg);
+      opacity: 0.7;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-disabled;
+    outline: none;
+    border: 1px solid transparent;
+  }
+}
+
+.button-dark {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: max-content;
+  padding: 0;
+  border: 1px solid $color-default-white;
+  border-radius: 30px;
+  background-color: transparent;
+  color: $color-default-white;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: $color-default-white;
+    color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    .button-description {
+      color: $color-blue;
+      outline: none;
+      border: none;
+    }
+
+    .button-svg-wrapper {
+      color: $color-default-white;
+      background-color: $color-blue;
+      outline: none;
+      border: none;
+
+      svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: transparent;
+    color: $color-default-white;
+    outline: none;
+    border: 1px solid $color-default-white;
+
+    .button-description {
+      color: $color-default-white;
+      outline: none;
+      border: none;
+    }
+
+    .button-svg-wrapper {
+      color: $color-blue;
+      background-color: $color-default-white;
+      outline: none;
+      border: none;
+
+      svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-blue;
+    outline: none;
+    border: 1px solid transparent;
+
+    .button-description {
+      color: $color-blue;
+      outline: none;
+      border: none;
+      opacity: 0.7;
+    }
+
+    .button-svg-wrapper {
+      color: $color-default-white;
+      background-color: $color-blue;
+      outline: none;
+      border: none;
+
+      svg {
+        transform: rotate(0deg);
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-disabled;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid $color-disabled;
+
+    .button-description {
+      color: $color-disabled;
+      outline: none;
+      border: none;
+    }
+
+    .button-svg-wrapper {
+      color: $color-default-white;
+      background-color: $color-disabled;
+      outline: none;
+      border: none;
+
+      svg {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

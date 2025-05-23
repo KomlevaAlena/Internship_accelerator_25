@@ -1,0 +1,229 @@
+
+.modal {
+  display: none;
+}
+
+.modal-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: $color-overlay;
+  z-index: 2;
+}
+
+.modal-form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  width: 290px;
+  margin: auto;
+  padding: 15px;
+  background-color: $color-default-white;
+  border-radius: 16px;
+  top: 5%;
+}
+
+.modal-form__title {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0 0 15px;
+  font-size: 18px;
+  line-height: 18px;
+  color: $color-blue;
+}
+
+.modal-form__toggle {
+  position: relative;
+  margin: 0 0 0 auto;
+  width: 34px;
+  height: 34px;
+
+  svg {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 25%;
+    left: 25%;
+  }
+}
+
+.modal-form__description {
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+  padding: 0 0 25px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-main;
+  text-align: center;
+}
+
+.modal-form__form {
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  gap: 15px;
+}
+
+.modal-form__group {
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+
+  input,
+  textarea,
+  select {
+    position: relative;
+    display: block;
+    width: 260px;
+    padding: 16px 25px;
+    border: 1px solid rgba(72, 72, 72, 0.7);
+    border-radius: 8px;
+    color: $color-main;
+    background-color: transparent;
+
+    // &:before {
+    //   display: none;
+    //   position: absolute;
+    //   background-color: $color-default-white;
+    //   content:'';
+    //   opacity: 0.3;
+    //   width: 2px;
+    //   height: 18px;
+    //   top: 50%;
+    //   left: 0;
+    // }
+
+    &:hover {
+      border: 1px solid $color-main;
+      outline: none;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:active {
+      border: 1px solid $color-main;
+      outline: none;
+
+      // &:before {
+      //   position: absolute;
+      //   display: block;
+      //   background-color: $color-default-white;
+      //   content:'';
+      //   opacity: 0.3;
+      //   width: 2px;
+      //   height: 18px;
+      //   top: 50%;
+      //   left: 0;
+      // }
+    }
+
+    &:disabled {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      background-color: rgba(169, 175, 183, 0.3);
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.select-title,
+.modal-label {
+  display: block;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-main;
+  font-weight: 400;
+}
+
+.modal-form__group.is-invalid {
+  position: relative;
+
+  input,
+  textarea {
+    border: 1px solid $color-error;
+    background-color: rgba(255, 94, 102, 0.3);
+  }
+
+  .input-message {
+    position: absolute;
+    display: block;
+    width: 270px;
+    border: 1px solid $color-error;
+    background-color: rgba(255, 94, 102, 0.3);
+    color: $color-default-white;
+    top: -10px;
+    left: 0;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+
+.modal-form__group.is-valid {
+  position: relative;
+
+  .input-message {
+    position: absolute;
+    display: block;
+    width: 270px;
+    border: 1px solid $color-default-white;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: $color-default-white;
+    top: -10px;
+    left: 0;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+}
+
+.modal-form__button {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid $color-blue;
+}
+
+.modal-form__button-label {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  color: $color-blue;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.modal-form__arrow {
+  background-color: $color-blue;
+  color: $color-default-white;
+}

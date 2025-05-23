@@ -1,0 +1,125 @@
+.reviews-card.swiper-slide {
+  padding: 32px 17px;
+  margin: 0;
+  width: 290px;
+  background-color: $color-default-white;
+  color: $color-blue;
+  border: 2px solid $color-blue;
+  border-radius: 16px;
+
+  @media (min-width: $vp-768) {
+    width: 560px;
+    display: grid;
+    grid-template-columns: 162px auto;
+    grid-template-rows: auto;
+    align-self: stretch;
+    min-height: 35vh;
+  }
+}
+
+.reviews-card__name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 256px;
+  margin: 0 auto;
+  padding: 0 0 15px;
+
+  picture {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: $color-blue;
+  }
+
+  @media (min-width: $vp-768) {
+    picture {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    picture {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+.reviews-card__title {
+  display: block;
+  width: min-content;
+  margin: 0;
+  padding: 0 0 0 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: start;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 18px;
+  }
+}
+
+.reviews-card__content {
+  grid-column: 1 / -1;
+}
+
+.reviews-card__description {
+  display: block;
+  width: 256px;
+  margin: 0 auto;
+  padding: 0 0 20px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: start;
+  color: $color-blue;
+
+  @media (min-width: $vp-768) {
+    width: 465px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 0 25px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 504px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.reviews-card__text {
+  display: block;
+  width: 256px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: start;
+  color: $color-main;
+
+  @media (min-width: $vp-768) {
+    width: 465px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 504px;
+    line-height: 26px;
+  }
+}

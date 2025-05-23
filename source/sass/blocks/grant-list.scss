@@ -1,0 +1,138 @@
+.grant-list {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 493px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px;
+    margin: 0;
+  }
+}
+
+.grant-list__list {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $color-blue;
+  color: $color-default-white;
+  border-radius: 20px;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px 28px;
+    padding: 50px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 493px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.grant-list__title {
+  width: 210px;
+  margin: 0;
+  padding: 0 0 25px;
+  color: $color-default-white;
+  font-size: 18px;
+  line-height: 22px;
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+    color: $color-default-white;
+    font-size: 28px;
+    line-height: 28px;
+    padding: 0 0 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 498px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.grant-list__item {
+  margin: 15px 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 275px;
+  border: 1px solid $color-default-white;
+  border-radius: 16px;
+  padding: 25px 26px;
+
+  &:first-of-type {
+    margin: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    width: 305px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 498px;
+    padding: 31px 26px;
+  }
+}
+
+.grant-list__number {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 10px 7px;
+  background-color: $color-blue;
+  color: $color-default-white;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  top: -10px;
+  left: -18px;
+}
+
+.grant-list__text {
+  width: 223px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $font-manrope-light;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $vp-1440) {
+    width: 426px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

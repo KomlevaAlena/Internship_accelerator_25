@@ -1,0 +1,14 @@
+.main-header {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $vp-768) {
+    width: 768px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,53 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: row;
+  width: 290px;
+  margin: 0 auto;
+  position: absolute;
+  content: "";
+  z-index: 2;
+  top: 20px;
+  left: 15px;
+
+
+  @media (min-width: $vp-768) {
+    width: 678px;
+    top: 31px;
+    left: 45px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 1240px;
+    top: 30px;
+    left: 100px;
+  }
+}
+
+.main-nav__logo {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: $color-default-white;
+  position: relative;
+
+  picture {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    content: "";
+    top: 21%;
+    left: 20%;
+  }
+
+  @media (min-width: $vp-768) {
+    display: block;
+
+    picture {
+      top: 21%;
+    }
+  }
+}
