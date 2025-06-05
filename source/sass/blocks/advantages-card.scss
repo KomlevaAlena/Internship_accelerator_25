@@ -6,7 +6,7 @@
   max-width: 250px;
   border: 1px solid $color-default-white;
   border-radius: 16px;
-  padding: 14px 21px 15px;
+  padding: 14px 20px 15px;
 
   @media (min-width: $vp-768) {
     min-width: 273px;
@@ -47,6 +47,15 @@
     line-height: 30px;
     letter-spacing: 0.26px;
     padding: 0;
+  }
+}
+
+.advantages-card:last-of-type {
+  .advantages-card__title:first-of-type {
+    padding: 0 0 0 0;
+  }
+  .advantages-card__title:last-of-type {
+    margin: -2px auto 0;
   }
 }
 

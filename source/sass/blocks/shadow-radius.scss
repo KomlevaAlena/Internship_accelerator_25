@@ -80,3 +80,61 @@
     left: 184px;
   }
 }
+
+
+.internship-programs-card {
+  .programs-card__title::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: 33px;
+      left: 145px;
+      width: 10px;
+      height: 10px;
+      rotate: -90deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+}
+
+.volunteer-programs-card {
+  .programs-card__title::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: 33px;
+      left: 162px;
+      width: 10px;
+      height: 10px;
+      rotate: -90deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+}
+
+.studies-programs-card {
+  .programs-card__title::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: 33px;
+      left: 98px;
+      width: 10px;
+      height: 10px;
+      rotate: -90deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+}
