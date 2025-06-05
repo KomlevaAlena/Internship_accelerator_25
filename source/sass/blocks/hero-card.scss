@@ -20,6 +20,7 @@
 }
 
 .hero-pagination {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -32,6 +33,23 @@
   border-radius: 15px 15px 0 0;
   margin: 0;
   padding: 10px 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    top: 18px;
+    left: 80px;
+    width: 10px;
+    height: 10px;
+    rotate: -90deg;
+    border-top-left-radius: 103%;
+    box-shadow: offset-x offset-y blur spread color position;
+    -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+    box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
 
   .swiper-pagination-bullet {
     display: block;
@@ -70,6 +88,22 @@
   padding: 21px 20px 16px 15px;
   width: 289px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    top: 168px;
+    left: 267px;
+    width: 10px;
+    height: 10px;
+    border-top-left-radius: 103%;
+    box-shadow: offset-x offset-y blur spread color position;
+    -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+    box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+
   @media (min-width: $vp-768) {
     width: 659px;
     padding: 30px 69px 24px 40px;
@@ -87,10 +121,13 @@
 }
 
 .hero-card__content {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   flex-direction: column;
+
+
 
   @media (min-width: $vp-768) {
     flex-direction: row;
@@ -98,6 +135,7 @@
 }
 
 .hero-card__text {
+  position: relative;
   display: block;
   color: $color-main;
   background-color: $color-default-white;
@@ -109,6 +147,22 @@
   padding: 0 15px 15px;
   margin: 0;
   width: 267px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    top: 115px;
+    left: 184px;
+    width: 10px;
+    height: 10px;
+    border-top-left-radius: 103%;
+    box-shadow: offset-x offset-y blur spread color position;
+    -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+    box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
 
   @media (min-width: $vp-768) {
     width: 355px;
