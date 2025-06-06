@@ -25,7 +25,7 @@
 .news__title {
   width: 290px;
   margin: 0 auto;
-  padding: 0 0 15px;
+  padding: 0 0 19px;
   text-align: center;
 
   @media (min-width: $vp-768) {
@@ -47,8 +47,9 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  gap: 12px;
-  padding: 0 0 24px;
+  // gap: 12px;
+  gap: 0;
+  padding: 0 0 24px 15px;
 
   @media (min-width: $vp-768) {
     width: 678px;
@@ -63,18 +64,29 @@
     padding: 0 0 40px;
     gap: 0;
   }
+
+  // .news__item.swiper-slide {
+  //   margin-right: 0;
+  //   pointer-events: none;
+  // }
+
+  // .news__item.swiper-slide.swiper-slide-active {
+  //   margin-right: 0;
+  //   pointer-events: none;
+  // }
 }
 
 .news__item.swiper-slide {
   width: max-content;
+  margin-right: 0;
 
   .news__button {
     width: max-content;
-    padding: 16px 12px;
+    padding: 10px 16px 10px 15px;
     font-size: 12px;
     line-height: 12px;
     text-transform: uppercase;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     outline: none;
     opacity: 0.7;
 
@@ -88,14 +100,16 @@
 
 .news__item.swiper-slide.swiper-slide-active {
   width: max-content;
+  margin-right: 0;
 
   .news__button {
     width: max-content;
-    padding: 16px 12px;
+    padding: 10px 16px 10px 15px;
     font-size: 12px;
     line-height: 12px;
     text-transform: uppercase;
-    border: 1px solid $color-blue;
+    letter-spacing: 0.15px;
+    border: 2px solid $color-blue;
     outline: none;
     opacity: 1;
 
@@ -105,4 +119,8 @@
       line-height: 14px;
     }
   }
+}
+
+.news__wrapper-menu.swiper {
+  padding: 5px 0 0 0;
 }

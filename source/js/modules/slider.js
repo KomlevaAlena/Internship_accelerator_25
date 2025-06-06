@@ -89,11 +89,12 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
   modules: [Navigation, Pagination, Grid],
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      spaceBetween: 0,
+      slidesPerView: 'auto',
+      spaceBetween: 9,
       grid: {
         rows: 2,
         fill: 'row',
+        gap: '0',
       },
     },
     768: {

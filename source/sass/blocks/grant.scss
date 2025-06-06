@@ -1,7 +1,7 @@
 .grant {
   width: 100%;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 71px 0 50px 0;
   background-color: $color-blue;
   color: $color-default-white;
 
@@ -21,7 +21,7 @@
     display: block;
     width: 290px;
     margin: 0 auto;
-    padding: 0 0 30px;
+    padding: 0 0 40px;
   }
 
   @media (min-width: $vp-768) {
@@ -63,7 +63,7 @@
 .grant-description__title {
   width: 290px;
   margin: 0 auto;
-  padding: 0 0 15px;
+  padding: 0 0 14px;
   color: $color-default-white;
 
   @media (min-width: $vp-768) {

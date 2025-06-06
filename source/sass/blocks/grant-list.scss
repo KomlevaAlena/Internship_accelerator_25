@@ -28,7 +28,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 20px 15px;
   background-color: $color-blue;
   color: $color-default-white;
   border-radius: 20px;
@@ -56,7 +56,7 @@
 .grant-list__title {
   width: 210px;
   margin: 0;
-  padding: 0 0 25px;
+  padding: 0 0 10px;
   color: $color-default-white;
   font-size: 18px;
   line-height: 22px;
@@ -85,7 +85,7 @@
   width: 275px;
   border: 1px solid $color-default-white;
   border-radius: 16px;
-  padding: 25px 26px;
+  padding: 24px 26px 24px 26px;
 
   &:first-of-type {
     margin: 0;
@@ -108,7 +108,7 @@
   position: absolute;
   content: "";
   display: block;
-  width: 32px;
+  width: 26px;
   height: 32px;
   padding: 10px 7px;
   background-color: $color-blue;
@@ -117,8 +117,8 @@
   font-size: 18px;
   line-height: 18px;
   border-radius: 50%;
-  top: -10px;
-  left: -18px;
+  top: -9px;
+  left: -13px;
 }
 
 .grant-list__text {
@@ -129,6 +129,7 @@
   font-family: $font-manrope-light;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: 0.1px;
 
   @media (min-width: $vp-1440) {
     width: 426px;
