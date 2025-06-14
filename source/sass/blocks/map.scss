@@ -47,15 +47,15 @@
   position: absolute;
   content: "";
   display: block;
-  top: 30%;
-  left: 50%;
+  top: 28%;
+  left: 47.5%;
   width: 18px;
   height: 21px;
 
   svg {
     display: block;
-    width: 18px;
-    height: 21px;
+    width:29px;
+    height: 24px;
   }
 
   @media (min-width: $vp-768) {

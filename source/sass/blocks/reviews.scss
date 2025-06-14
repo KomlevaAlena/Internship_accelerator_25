@@ -1,7 +1,7 @@
 .reviews {
   width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 56px 0 20px;
   background-color: $color-default-white;
 
   .container {
@@ -38,13 +38,14 @@
 }
 
 .reviews__wrapper-title {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   width: 290px;
   margin: 0 auto;
-  padding: 0 0 30px;
+  padding: 0 0 34px;
   background-color: transparent;
 
   @media (min-width: $vp-768) {
@@ -57,6 +58,8 @@
 }
 
 .reviews__wrapper-button {
+  position: absolute;
+  content: '';
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -64,6 +67,9 @@
   width: max-content;
   background-color: transparent;
   color: $color-blue;
+  right: 0;
+  top: -3px;
+  gap: 9px;
 }
 
 .reviews__button--next {
