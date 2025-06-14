@@ -74,7 +74,8 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
   direction: 'horizontal',
   loop: false,
   loopAddBlankSlides: true,
-  freeMode: true,
+  freeMode: false,
+  slidesPerView: 2,
   navigation: {
     nextEl: '.news__button-next',
     prevEl: '.news__button-prev',
@@ -82,6 +83,7 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
   pagination: {
     el: '.news-pagination',
     clickable: true,
+    type: 'bullets',
     renderBullet: function (index, className) {
       return `<span class="${ className }">${ index + 1 }</span>`;
     },
@@ -89,13 +91,18 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
   modules: [Navigation, Pagination, Grid],
   breakpoints: {
     320: {
-      slidesPerView: 'auto',
+      slidesPerView: 1,
       spaceBetween: 9,
       grid: {
         rows: 2,
+        columns: 1,
         fill: 'row',
-        gap: '0',
+        // gap: '0',
       },
+      pagination: {
+        dynamicBullets: false,
+        dynamicMainBullets: 4,
+      }
     },
     768: {
       slidesPerView: 2,
