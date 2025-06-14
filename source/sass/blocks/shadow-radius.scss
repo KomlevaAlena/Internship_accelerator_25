@@ -138,3 +138,143 @@
       box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
   }
 }
+
+.news-interview-slide {
+  .news-card__date::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: 10px;
+      left: 78px;
+      width: 23px;
+      height: 23px;
+      rotate: -98deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+
+  .news-card__date::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: -20px;
+      left: 0px;
+      width: 23px;
+      height: 23px;
+      rotate: -98deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+
+  .news-card__title::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: 28px;
+      left: 198px;
+      width: 23px;
+      height: 23px;
+      rotate: -90deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+
+  .news-card__button-wrapper::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: 42px;
+      left: 260px;
+      width: 23px;
+      height: 23px;
+      rotate: -90deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+}
+
+.news-trevel-slide {
+  .news-card__date::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: 10px;
+      left: 78px;
+      width: 23px;
+      height: 23px;
+      rotate: -98deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+
+  .news-card__date::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: -20px;
+      left: 0px;
+      width: 23px;
+      height: 23px;
+      rotate: -98deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+
+  .news-card__title::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: 12px;
+      left: 199px;
+      width: 23px;
+      height: 23px;
+      rotate: -97deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+
+  .news-card__button-wrapper::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      top: 30px;
+      left: 260px;
+      width: 23px;
+      height: 23px;
+      rotate: -90deg;
+      border-top-left-radius: 103%;
+      box-shadow: offset-x offset-y blur spread color position;
+      -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+      box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+}

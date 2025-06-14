@@ -1,6 +1,7 @@
 .news-card {
   display: block;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .news-card__wrapper {
@@ -15,6 +16,7 @@
 }
 
 .news-card__date {
+  position: relative;
   width: max-content;
   display: block;
   padding: 12px 13px 6px 1px;
@@ -27,6 +29,7 @@
 }
 
 .news-card__title {
+  position: relative;
   display: block;
   color: $color-blue;
   background-color: $color-default-white;
@@ -64,6 +67,7 @@
 }
 
 .news-card__button-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
