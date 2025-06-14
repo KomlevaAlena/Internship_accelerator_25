@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.news-card:not(:first-of-type) {
+  max-height: 240px;
+}
+
 .news-card__wrapper {
   position: absolute;
   content: "";
