@@ -30,7 +30,7 @@
     position: relative;
     display: block;
     width: 270px;
-    padding: 16px 25px;
+    padding: 16px 25px 14px 25px;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 8px;
     color: $color-default-white;
@@ -83,6 +83,30 @@
       &::before {
         display: none;
       }
+    }
+  }
+
+  .form__phone + input:not([class]) {
+    padding: 15px 25px 14px 25px;
+    &:hover {
+      padding: 15px 25px 14px 25px;
+    }
+    &:focus,
+    &:focus-visible,
+    &:active {
+      padding: 15px 25px 14px 25px;
+    }
+  }
+
+  .form__message + textarea:not([class]) {
+    padding: 10px 25px 9px 25px;
+    &:hover {
+      padding: 10px 25px 9px 25px;
+    }
+    &:focus,
+    &:focus-visible,
+    &:active {
+      padding: 10px 25px 9px 25px;
     }
   }
 
@@ -162,13 +186,32 @@
 }
 
 .form-select {
+  position: relative;
   display: block;
-  width: 270px;
-  padding: 16px 25px;
+  width: 260px;
+  padding: 16px 25px 15px 25px;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 8px;
   color: $color-default-white;
   background-color: transparent;
+  appearance: none;
+
+  &::before {
+    content: "▼";
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    background-image: urlurl('data:image/svg+xml;utf8,<svg width="22" height="11" viewBox="0 0 22 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 1L11 10L1 1" stroke="currentColor"/></svg>');
+    // mask-image: white;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: -1;
+    background-color: violet;
+    background-size: contain;
+    }
 
   &:hover {
     border: 1px solid $color-default-white;
@@ -194,6 +237,16 @@
 
   @media (min-width: $vp-768) {
     width: 362px;
+  }
+}
+
+.form__select-wrapper {
+  position: relative;
+  z-index: 1;
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 }
 
@@ -231,8 +284,8 @@
 }
 
 .form__button {
-  width: 100%;
-  margin: 0 auto;
+  width: 261px;
+  margin: -1px 0 0 0;
   border: 1px solid $color-default-white;
 }
 
@@ -254,4 +307,8 @@
 .form__arrow {
   background-color: $color-default-white;
   color: $color-blue;
+}
+
+.form__group-checkbox {
+  margin: -2px 0 0 2px;
 }
