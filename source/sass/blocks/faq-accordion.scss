@@ -4,13 +4,13 @@
 }
 
 .faq__element-wrapper {
-  padding: 17px 22px;
+  padding: 22px 21px 20px 15px;
   margin: 0 auto;
   width: 290px;
   background-color: $color-default-white;
   color: $color-blue;
   border: 2px solid $color-blue;
-  border-radius: 16px;
+  border-radius: 13px;
 
   @media (min-width: $vp-768) {
     width: 678px;
@@ -67,6 +67,7 @@
   position: relative;
   width: 40px;
   height: 40px;
+  margin: -2px 0 0 0;
 
   &::before {
     position: absolute;
@@ -164,13 +165,13 @@
 
 .faq__item.is-active {
   .faq__element-wrapper {
-    padding: 17px 22px;
+    padding: 22px 21px 20px 15px;
     margin: 0 auto;
     width: 290px;
     background-color: $color-blue;
     color: $color-default-white;
     border: 2px solid $color-blue;
-    border-radius: 10px;
+    border-radius: 13px;
 
     .faq__element-container > .faq__element-button {
       background-color: $color-default-white;
@@ -230,5 +231,21 @@
       width: 1028px;
       padding: 42px;
     }
+  }
+}
+
+.faq__item:nth-of-type(4n) .faq__element-wrapper{
+  padding: 20px 21px 20px 15px;
+
+  .accordion__button-wrapper .faq__element-button {
+    margin: 7px 0 0 0;
+  }
+}
+
+.faq__item:last-of-type .faq__element-wrapper{
+  padding: 20px 21px 20px 15px;
+
+  .accordion__button-wrapper .faq__element-button {
+    margin: 16px 0 0 0;
   }
 }
