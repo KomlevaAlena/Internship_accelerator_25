@@ -82,6 +82,20 @@
     top: 95px;
     left: 184px;
   }
+
+  @media (min-width: $vp-768) {
+    .hero-pagination::before {
+    top: 21px;
+    left: 101px;
+    rotate: -97deg;
+    }
+
+    .hero-card__title::before {
+    top: 177px;
+    left: 592px;
+    rotate: -2deg;
+    }
+  }
 }
 
 .volunteer-hero-card {
@@ -98,6 +112,20 @@
   .hero-card__text::before {
     top: 115px;
     left: 184px;
+  }
+
+  @media (min-width: $vp-768) {
+    .hero-pagination::before {
+      top: 21px;
+      left: 101px;
+      rotate: -93deg;
+    }
+
+    .hero-card__title::before {
+      top: 177px;
+      left: 592px;
+      rotate: 2deg;
+    }
   }
 }
 
