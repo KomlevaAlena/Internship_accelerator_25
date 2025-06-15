@@ -49,6 +49,12 @@
     -moz-box-shadow: -7px -7px 0px 6px rgba(255, 255, 255, 1);
     box-shadow: -7px -7px 0px 6px rgba(255, 255, 255, 1);
     }
+
+    @media (min-width: $vp-1440) {
+      top: 230px;
+      left: 773px;
+      rotate: 3deg;
+    }
 }
 
 .hero-card__text::before {
@@ -65,6 +71,14 @@
     -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
     -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
     box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+
+    @media (min-width: $vp-1440) {
+      display: none;
+    }
 }
 
 .internship-hero-card {

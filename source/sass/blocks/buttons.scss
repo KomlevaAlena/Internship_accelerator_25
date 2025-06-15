@@ -88,6 +88,10 @@
     line-height: 14px;
     padding: 19px 28px 18px 29px;
   }
+
+  @media (min-width: $vp-1440) {
+    padding: 22px 28px 20px 29px;
+  }
 }
 
 .button-svg-wrapper {

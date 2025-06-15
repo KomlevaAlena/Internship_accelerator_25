@@ -17,6 +17,11 @@
     left: 45px;
     bottom: 60px;
   }
+
+  @media (min-width: $vp-1440) {
+    left: 100px;
+    bottom: 60px;
+  }
 }
 
 .hero-pagination {
@@ -129,6 +134,8 @@
 
   @media (min-width: $vp-1440) {
     width: 526px;
+    padding: 0 30px 35px 49px;
+    line-height: 26px;
   }
 }
 
@@ -142,5 +149,9 @@
   @media (min-width: $vp-768) {
     padding: 0 40px 35px 42px;
     border-radius: 0 0 30px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 10px 52px 37px 0;
   }
 }
