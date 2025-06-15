@@ -177,6 +177,14 @@
       -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
       box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
   }
+
+  @media (min-width: $vp-768) {
+    .programs-card__title::before {
+      top: 19px;
+      left: 173px;
+      rotate: -98deg;
+    }
+  }
 }
 
 .volunteer-programs-card {
@@ -196,6 +204,24 @@
       -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
       box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
   }
+
+  @media (min-width: $vp-768) {
+
+    .programs-card__title {
+      padding: 16px 19px 2px 18px;
+    }
+    .programs-card__title::before {
+      width: 14px;
+      height: 14px;
+      top: 24px;
+      left: 174px;
+      rotate: -96deg;
+    }
+
+    .programs-card__button-wrapper > .programs-card__text {
+      width: 197px;
+    }
+  }
 }
 
 .studies-programs-card {
@@ -214,6 +240,17 @@
       -webkit-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
       -moz-box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
       box-shadow: -4px -6px 0px 3px rgba(255, 255, 255, 1);
+  }
+
+  @media (min-width: $vp-768) {
+
+    .programs-card__title::before {
+      width: 14px;
+      height: 14px;
+      top: 26px;
+      left: 113px;
+      rotate: -90deg;
+    }
   }
 }
 
