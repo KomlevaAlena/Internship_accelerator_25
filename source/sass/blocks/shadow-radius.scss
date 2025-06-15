@@ -110,6 +110,14 @@
     rotate: -2deg;
     }
   }
+
+  @media (min-width: $vp-1440) {
+      .hero-card__title::before {
+        top: 229px;
+        left: 774px;
+        rotate: -2deg;
+      }
+    }
 }
 
 .volunteer-hero-card {
@@ -141,6 +149,14 @@
       rotate: 2deg;
     }
   }
+
+  @media (min-width: $vp-1440) {
+      .hero-card__title::before {
+        top: 229px;
+        left: 774px;
+        rotate: 2deg;
+      }
+    }
 }
 
 
