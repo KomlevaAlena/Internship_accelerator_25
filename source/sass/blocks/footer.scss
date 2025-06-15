@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 0 32px 0;
 }
 
 .footer__container {
@@ -44,7 +44,7 @@
     height: 30px;
     margin: 0 auto;
     padding: 0;
-    top: 20%;
+    top: 21%;
     left: 21%;
   }
 
@@ -75,6 +75,10 @@
   }
 }
 
+.footer__container > .nav-list + .nav-list {
+  padding: 0 0 21px 0;
+}
+
 .footer__copyright {
   display: block;
   width: max-content;
@@ -102,7 +106,7 @@
   display: block;
   width: max-content;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 1px 0;
   text-align: center;
   color: $color-main;
   font-size: 12px;
