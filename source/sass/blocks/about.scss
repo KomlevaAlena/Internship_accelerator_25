@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $vp-1440) {
-    padding: 60px 0;
+    padding: 70px 0 60px 0;
 
     .container {
       width: 1240px;
@@ -68,7 +68,8 @@ h3.about__title {
   @media (min-width: $vp-1440) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 0 0 30px;
+    padding: 0 0 30px 26px;
+    margin: 0 0 0 0;
     width: 498px;
     font-size: 32px;
     line-height: 36px;
@@ -121,9 +122,9 @@ h3.about__title {
   @media (min-width: $vp-1440) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    padding: 0 0 40px;
-    margin: 0;
-    width: 498px;
+    padding: 0 0 50px 20px;
+    margin: -4px 0 0 6px;
+    width: 504px;
     line-height: 26px;
   }
 }
@@ -145,7 +146,7 @@ h3.about__title {
   @media (min-width: $vp-1440) {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    padding: 0 0 40px;
+    padding: 0 0 40px 26px;
 
     .about__button-description {
       padding: 19px 30px 18px 30px;
