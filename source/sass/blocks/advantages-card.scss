@@ -9,8 +9,9 @@
   padding: 14px 20px 15px;
 
   @media (min-width: $vp-768) {
-    min-width: 273px;
+    min-width: 253px;
     align-items: start;
+    padding: 16px 20px 15px 20px;
   }
 
   @media (min-width: $vp-1440) {
@@ -56,6 +57,15 @@
   }
   .advantages-card__title:last-of-type {
     margin: -2px auto 0;
+  }
+
+  @media (min-width: $vp-768) {
+    // .advantages-card__title:first-of-type {
+    //   padding: 0 0 0 0;
+    // }
+    .advantages-card__title:last-of-type {
+      margin: 0;
+    }
   }
 }
 

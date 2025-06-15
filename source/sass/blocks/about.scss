@@ -20,7 +20,7 @@
 
     .container {
       width: 1240px;
-      margin: 0 auto;
+      margin: 0 auto 0 auto;
     }
   }
 }
@@ -134,11 +134,21 @@ h3.about__title {
   margin: 0;
   padding: 0;
 
-  // padding: 0 0 40px 45px;
+  @media (min-width: $vp-768) {
+    padding: 0 0 40px 45px;
+
+    .about__button-description {
+      padding: 19px 30px 18px 30px;
+    }
+  }
 
   @media (min-width: $vp-1440) {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     padding: 0 0 40px;
+
+    .about__button-description {
+      padding: 19px 30px 18px 30px;
+    }
   }
 }

@@ -17,6 +17,7 @@
 
   @media (min-width: $vp-768) {
     width: 678px;
+    margin: 20px auto 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -39,8 +40,10 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 32px;
-    padding: 50px;
+    // gap: 52px;
+    row-gap: 54px;
+    column-gap: 52px;
+    padding: 72px 50px 50px 71px;
   }
 }
 
