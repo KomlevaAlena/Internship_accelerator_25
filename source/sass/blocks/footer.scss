@@ -17,12 +17,13 @@
   @media (min-width: $vp-768) {
     width: 768px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 150px 309px 309px;
     grid-template-rows: auto auto auto;
   }
 
   @media (min-width: $vp-1440) {
     width: 1240px;
+    padding: 40px 0 32px 0;
   }
 }
 
@@ -51,7 +52,7 @@
   @media (min-width: $vp-768) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    margin: 0 52px 0 0;
+    margin: 0 52px 0 46px;
   }
 }
 
@@ -67,6 +68,8 @@
 
   @media (min-width: $vp-768) {
     width: max-content;
+    padding: 13px 0 20px;
+    gap: 14px;
   }
 
   @media (min-width: $vp-1440) {
@@ -77,6 +80,25 @@
 
 .footer__container > .nav-list + .nav-list {
   padding: 0 0 21px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 13px 0 21px 0;
+    margin: 0 47px 0 auto;
+  }
+}
+
+.footer__container > .nav-list:first-of-type {
+  @media (min-width: $vp-768) {
+    grid-column: 2 / 3;
+    margin: 0 0 0 47px;
+  }
+}
+
+.footer__container > .nav-list:last-of-type {
+  @media (min-width: $vp-768) {
+    grid-column: 3 / 4;
+
+  }
 }
 
 .footer__copyright {
@@ -92,7 +114,7 @@
   @media (min-width: $vp-768) {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
-    margin: 0;
+    margin: 0 0 0 45px;
   }
 
   @media (min-width: $vp-1440) {
@@ -145,7 +167,8 @@
   @media (min-width: $vp-768) {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    margin: 0;
+    margin: 17px 0 0 46px;
+    padding: 0;
   }
 
   @media (min-width: $vp-1440) {

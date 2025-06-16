@@ -53,6 +53,11 @@
     outline: none;
   }
 
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
   @media (min-width: $vp-1440) {
     font-size: 16px;
     line-height: 26px;
