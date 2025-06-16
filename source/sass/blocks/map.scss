@@ -24,7 +24,7 @@
     width: 1240px;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    padding: 40px 0 0;
+    padding: 42px 0 0;
 
     &::before {
       content: "";
@@ -71,8 +71,8 @@
   }
 
   @media (min-width: $vp-1440) {
-    top: 26%;
-    left: 52%;
+    top: 22.5%;
+    left: 49%;
     width: 70px;
     height: 69px;
 
