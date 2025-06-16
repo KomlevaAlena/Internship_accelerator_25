@@ -8,6 +8,7 @@
 
   @media (min-width: $vp-768) {
     width: 678px;
+    margin: 10px auto 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -17,7 +18,7 @@
     flex-wrap: wrap;
     justify-content: start;
     gap: 30px;
-    margin: 0;
+    margin: 0 0 0 0;
   }
 }
 
@@ -34,12 +35,12 @@
   border-radius: 20px;
 
   @media (min-width: $vp-768) {
-    width: 678px;
+    width: 717px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 20px 28px;
-    padding: 50px;
+    gap: 25px 28px;
+    padding: 25px 19px 50px 20px;
   }
 
   @media (min-width: $vp-1440) {
@@ -94,6 +95,7 @@
   @media (min-width: $vp-768) {
     margin: 0;
     width: 305px;
+    padding: 30px 26px 30px 26px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -119,6 +121,12 @@
   border-radius: 50%;
   top: -9px;
   left: -13px;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    top: -15px;
+    left: -12px;
+  }
 }
 
 .grant-list__text {
@@ -131,9 +139,26 @@
   line-height: 20px;
   letter-spacing: 0.1px;
 
+  br {
+    display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 267px;
+    font-size: 16px;
+
+    br {
+      display: block;
+    }
+  }
+
   @media (min-width: $vp-1440) {
     width: 426px;
     font-size: 16px;
     line-height: 26px;
+
+    br {
+      display: none;
+    }
   }
 }

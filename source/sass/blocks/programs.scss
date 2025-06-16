@@ -10,7 +10,7 @@
 
   @media (min-width: $vp-1440) {
     width: 1440px;
-    padding: 62px 0;
+    padding: 62px 0 60px;
   }
 }
 
@@ -272,6 +272,14 @@
 
   @media (min-width: $vp-1440) {
     background-color: rgba(49, 109, 194, 0.5);
+    width: 1136px;
+
+    .swiper-pagination-bullet {
+      width: 378px;
+    }
+    .swiper-pagination-bullet-active {
+      width: 378px;
+    }
   }
 }
 
