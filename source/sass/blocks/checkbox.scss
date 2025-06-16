@@ -110,6 +110,11 @@
     padding-left: 28px;
     line-height: 14px;
     cursor: pointer;
+
+    @media (min-width: $vp-768) {
+      padding-left: 31px;
+      letter-spacing: 0.1px;
+    }
   }
 
   input[type="checkbox"]:checked + label::before,
@@ -122,6 +127,11 @@
     height: 20px;
     border: 1px solid #dddddd;
     background-color: #ffffff;
+
+    @media (min-width: $vp-768) {
+      left: 0;
+      top: 0;
+    }
   }
 
   input[type="checkbox"]:checked + label::before,
@@ -169,8 +179,25 @@
   font-size: 12px;
   line-height: 14px;
 
+  br {
+    display: block;
+  }
+
   @media (min-width: $vp-768) {
+    width: 334px;
+    line-height: 12px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
     width: 304px;
     line-height: 12px;
+
+    br {
+      display: none;
+    }
   }
 }

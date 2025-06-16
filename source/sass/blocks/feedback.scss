@@ -2,6 +2,14 @@
   width: 100%;
   margin: 0 auto;
   padding: 40px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 50px 0 50px 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 50px 0;
+  }
 }
 
 .feedback__wrapper {
@@ -51,9 +59,12 @@
 
   @media (min-width: $vp-768) {
     width: 442px;
+    height: max-content;
     bottom: 0;
     left: 58px;
-    padding: 30px 40px 36px;
+    margin: -43px 0 0 0;
+    padding: 41px 40px 36px;
+    flex-direction: column;
   }
 
   @media (min-width: $vp-1440) {
