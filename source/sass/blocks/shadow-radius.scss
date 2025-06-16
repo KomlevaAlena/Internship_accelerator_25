@@ -185,6 +185,14 @@
       rotate: -98deg;
     }
   }
+
+  @media (min-width: $vp-1440) {
+    .programs-card__title::before {
+      top: 20px;
+      left: 193px;
+      rotate: -84deg;
+    }
+  }
 }
 
 .volunteer-programs-card {
@@ -222,6 +230,27 @@
       width: 197px;
     }
   }
+
+  @media (min-width: $vp-1440) {
+    .programs-card__title {
+      padding: 18px 13px 6px 18px;
+    }
+
+    .programs-card__title::before {
+      width: 20px;
+      height: 20px;
+      top: 22px;
+      left: 195px;
+    }
+
+    .programs-card__button-wrapper {
+      padding: 21px 18px 25px;
+    }
+
+    .programs-card__button-wrapper > .programs-card__text {
+      width: 216px;
+    }
+  }
 }
 
 .studies-programs-card {
@@ -250,6 +279,24 @@
       top: 26px;
       left: 113px;
       rotate: -90deg;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    .programs-card__title {
+      padding: 18px 13px 6px 18px;
+      width: 194px;
+    }
+
+    .programs-card__title::before {
+      width: 20px;
+      height: 20px;
+      top: 22px;
+      left: 195px;
+    }
+
+    .programs-card__button-wrapper {
+      padding: 21px 18px 25px;
     }
   }
 }

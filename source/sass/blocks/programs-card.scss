@@ -38,6 +38,10 @@
     left: 20px;
     bottom: 10px;
   }
+
+  @media (min-width: $vp-1440) {
+    bottom: 17px;
+  }
 }
 
 .programs-card__title {
@@ -57,7 +61,7 @@
   }
 
   @media (min-width: $vp-1440) {
-    padding: 18px 36px 6px 18px;
+    padding: 18px 37px 6px 18px;
     font-size: 24px;
     line-height: 17px;
   }
@@ -76,10 +80,12 @@
 
   @media (min-width: $vp-768) {
     width: 284px;
+    padding: 12px 18px 15px;
   }
 
   @media (min-width: $vp-1440) {
-    width: 305px;
+    width: 321px;
+    padding: 13px 18px 15px;
   }
 }
 

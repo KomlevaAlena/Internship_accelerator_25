@@ -10,7 +10,7 @@
 
   @media (min-width: $vp-1440) {
     width: 1440px;
-    padding: 60px 0;
+    padding: 62px 0;
   }
 }
 
@@ -43,7 +43,7 @@
 
   @media (min-width: $vp-1440) {
     width: 1240px;
-    padding: 0 0 40px;
+    padding: 0 0 42px;
   }
 }
 
@@ -261,6 +261,13 @@
     padding-inline-start: 0;
     width: 561px;
     height: 2px;
+
+    .swiper-pagination-bullet {
+      width: 280px;
+    }
+    .swiper-pagination-bullet-active {
+      width: 280px;
+    }
   }
 
   @media (min-width: $vp-1440) {
