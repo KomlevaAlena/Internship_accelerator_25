@@ -20,16 +20,10 @@
 
   @media (min-width: $vp-1440) {
     width: 1028px;
-    padding: 42px;
+    padding: 43px 42px 40px 40px;
     border-radius: 16px;
   }
 }
-
-// .faq__item:nth-of-type(4n) > .faq__element-wrapper {
-//   @media (min-width: $vp-768) {
-//     padding: 37px 32px 30px 30px;
-//   }
-// }
 
 
 .faq__element-title {
@@ -148,6 +142,10 @@
   @media (min-width: $vp-768) {
     margin: -7px 0 0 0;
   }
+
+  @media (min-width: $vp-1440) {
+    margin: -3px 0 0 0;
+  }
 }
 
 .faq__element-description {
@@ -179,8 +177,11 @@
   }
 
   @media (min-width: $vp-1440) {
+    padding: 20px 0 0;
+
     p {
       width: 944px;
+      line-height: 26px;
     }
 
     p >  br {
@@ -262,7 +263,7 @@
   @media (min-width: $vp-1440) {
     .faq__element-wrapper {
       width: 1028px;
-      padding: 42px;
+      padding: 43px 42px 40px 40px;
     }
   }
 }
@@ -290,7 +291,19 @@
 
     .accordion__button-wrapper .faq__element-button {
     margin: 0 0 0 0;
+    }
   }
+
+  @media (min-width: $vp-1440) {
+    padding: 40px 21px 40px 22px;
+
+    .accordion__button-wrapper .faq__element-title > br.faq__element-title-br{
+      display: none;
+    }
+
+    .accordion__button-wrapper .faq__element-title > br {
+      display: none;
+    }
   }
 }
 
@@ -307,5 +320,8 @@
     .accordion__button-wrapper .faq__element-button {
       margin: 0 0 0 0;
     }
+  }
+  @media (min-width: $vp-1440) {
+    padding: 40px 21px 40px 22px;
   }
 }
