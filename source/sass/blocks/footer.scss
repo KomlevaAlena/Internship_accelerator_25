@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 40px 0 32px 0;
 
+  @media (min-width: $vp-768) {
+    padding: 41px 0 32px 0;
+  }
+
   @media (min-width: $vp-1440) {
     padding: 20px 0 30px 0;
   }
