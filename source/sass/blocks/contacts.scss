@@ -43,12 +43,12 @@
 
   @media (min-width: $vp-768) {
     width: 678px;
-    padding: 0 0 30px;
+    padding: 0 0 31px;
   }
 
   @media (min-width: $vp-1440) {
     width: 604px;
-    padding: 0;
+    padding: 0 0 30px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
@@ -67,6 +67,7 @@
 
   @media (min-width: $vp-768) {
     width: 678px;
+     padding: 0 0 29px;
     flex-direction: row;
     justify-content: space-between;
   }
