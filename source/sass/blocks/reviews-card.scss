@@ -14,10 +14,15 @@
     grid-template-columns: 162px auto;
     grid-template-rows: auto;
     align-self: stretch;
-    // min-height: 35vh;
     min-height: 417px;
   }
+
+  @media (min-width: $vp-1440) {
+    padding: 35px 17px 55px 50px;
+    min-height: 483px;
+  }
 }
+
 
 .reviews-card__name {
   display: flex;
@@ -90,18 +95,30 @@
   text-align: start;
   color: $color-blue;
 
+  br {
+      display: none;
+    }
+
   @media (min-width: $vp-768) {
     width: 465px;
     font-size: 20px;
     line-height: 24px;
     margin: 0;
     padding: 0 0 25px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $vp-1440) {
     width: 504px;
     font-size: 24px;
     line-height: 26px;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -119,14 +136,23 @@
     display: none;
   }
 
+  .reviews-card__br {
+    display: none;
+  }
+
   @media (min-width: $vp-768) {
     width: 465px;
     font-size: 16px;
     line-height: 20px;
     margin: 0 0 -9px 0;
+
       br {
       display: block;
     }
+
+    .reviews-card__br {
+    display: none;
+  }
   }
 
   @media (min-width: $vp-1440) {
@@ -135,6 +161,10 @@
 
       br {
       display: none;
+    }
+
+    .reviews-card__br {
+      display: block;
     }
   }
 }

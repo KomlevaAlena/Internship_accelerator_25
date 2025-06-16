@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $vp-1440) {
-    padding: 50px 0 20px;
+    padding: 65px 0 8px;
 
     .container {
       width: 1240px;
@@ -59,7 +59,7 @@
 
   @media (min-width: $vp-1440) {
     width: 1240px;
-    padding: 0 0 40px;
+    padding: 0 0 45px 4px;
   }
 }
 
@@ -80,6 +80,10 @@
   @media (min-width: $vp-768) {
     top: 456px;
     z-index: 1;
+  }
+
+  @media (min-width: $vp-1440) {
+    top: 522px;
   }
 }
 
@@ -231,8 +235,8 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    margin: 0;
-    padding: 20px 0 0 0;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 0;
     list-style-type: none;
     padding-inline-start: 0;
     width: 561px;
