@@ -4,7 +4,7 @@
   padding: 40px 0;
 
   @media (min-width: $vp-768) {
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -54,7 +54,7 @@
   flex-wrap: wrap;
   justify-content: start;
   flex-direction: column;
-  padding: 15px 15px 27px 15px;
+  padding: 15px 15px 27px;
   margin: 0;
 
   @media (min-width: $vp-768) {
@@ -62,7 +62,7 @@
     height: max-content;
     bottom: 0;
     left: 58px;
-    margin: -43px 0 0 0;
+    margin: -43px 0 0;
     padding: 41px 40px 36px;
     flex-direction: column;
   }

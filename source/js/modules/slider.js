@@ -97,7 +97,6 @@ export const sliderNews = new Swiper('.news__slider-wrapper', {
         rows: 2,
         columns: 1,
         fill: 'row',
-        // gap: '0',
       },
       pagination: {
         dynamicBullets: false,

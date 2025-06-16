@@ -88,13 +88,14 @@
 .news__item-slider.swiper-slide-active {
   @media (min-width: $vp-1440) {
     width: 604px;
-
-    pictures {
-      width: 604px;
-    }
-
     .news-card__wrapper {
       width: 604px;
     }
+  }
+}
+
+.news__item-slider.swiper-slide-active picture {
+  @media (min-width: $vp-1440) {
+    width: 604px;
   }
 }

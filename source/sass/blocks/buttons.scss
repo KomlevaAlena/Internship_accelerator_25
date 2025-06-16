@@ -163,10 +163,10 @@
       color: $color-blue;
       outline: none;
       border: none;
+    }
 
-      svg {
-        transform: rotate(0deg);
-      }
+    .button-svg-wrapper > svg {
+      transform: rotate(0deg);
     }
   }
 
@@ -188,10 +188,10 @@
       color: $color-default-white;
       outline: none;
       border: none;
+    }
 
-      svg {
-        transform: rotate(0deg);
-      }
+    .button-svg-wrapper > svg {
+      transform: rotate(0deg);
     }
   }
 
@@ -213,16 +213,15 @@
       color: $color-blue;
       outline: none;
       border: none;
+    }
 
-      svg {
-        transform: rotate(0deg);
-        opacity: 0.7;
-      }
+    .button-svg-wrapper > svg {
+      transform: rotate(0deg);
+      opacity: 0.7;
     }
   }
 
-  &:disabled,
-  &--disabled {
+  &:disabled {
     color: $color-disabled;
     background-color: $color-default-white;
     outline: none;
@@ -239,10 +238,10 @@
       background-color: $color-disabled;
       outline: none;
       border: none;
+    }
 
-      svg {
-        transform: rotate(-45deg);
-      }
+    .button-svg-wrapper > svg {
+      transform: rotate(-45deg);
     }
   }
 
@@ -353,10 +352,10 @@
       background-color: $color-blue;
       outline: none;
       border: none;
+    }
 
-      svg {
-        transform: rotate(0deg);
-      }
+    .button-svg-wrapper > svg {
+      transform: rotate(0deg);
     }
   }
 
@@ -378,10 +377,10 @@
       background-color: $color-default-white;
       outline: none;
       border: none;
+    }
 
-      svg {
-        transform: rotate(0deg);
-      }
+    .button-svg-wrapper > svg {
+      transform: rotate(0deg);
     }
   }
 
@@ -403,16 +402,15 @@
       background-color: $color-blue;
       outline: none;
       border: none;
+    }
 
-      svg {
-        transform: rotate(0deg);
-        opacity: 0.7;
-      }
+    .button-svg-wrapper > svg {
+      transform: rotate(0deg);
+      opacity: 0.7;
     }
   }
 
-  &:disabled,
-  &--disabled {
+  &:disabled {
     color: $color-disabled;
     background-color: transparent;
     outline: none;
@@ -429,10 +427,10 @@
       background-color: $color-disabled;
       outline: none;
       border: none;
+    }
 
-      svg {
-        transform: rotate(-45deg);
-      }
+    .button-svg-wrapper > svg {
+      transform: rotate(-45deg);
     }
   }
 }

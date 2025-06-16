@@ -24,7 +24,7 @@
   line-height: 14px;
   letter-spacing: 0.15px;
 
-   @media (min-width: $vp-768) {
+  @media (min-width: $vp-768) {
     margin: 19px auto 21px 21px;
   }
 }
@@ -48,7 +48,6 @@
 }
 
 // для открытого меню
-
 .close-menu--disabled {
   display: none;
 }

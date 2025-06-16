@@ -5,7 +5,7 @@
 
   @media (min-width: $vp-768) {
     width: 768px;
-    padding: 50px 0 50px;
+    padding: 50px 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -265,6 +265,7 @@
     .swiper-pagination-bullet {
       width: 280px;
     }
+
     .swiper-pagination-bullet-active {
       width: 280px;
     }
@@ -277,6 +278,7 @@
     .swiper-pagination-bullet {
       width: 378px;
     }
+
     .swiper-pagination-bullet-active {
       width: 378px;
     }

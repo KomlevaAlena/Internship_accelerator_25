@@ -70,7 +70,7 @@
   position: relative;
   width: 40px;
   height: 40px;
-  margin: -2px 0 0 0;
+  margin: -2px 0 0;
 
   &::before {
     position: absolute;
@@ -140,11 +140,11 @@
   }
 
   @media (min-width: $vp-768) {
-    margin: -7px 0 0 0;
+    margin: -7px 0 0;
   }
 
   @media (min-width: $vp-1440) {
-    margin: -3px 0 0 0;
+    margin: -3px 0 0;
   }
 }
 
@@ -161,9 +161,9 @@
     font-weight: 400;
   }
 
-  p >  br {
-      display: none;
-    }
+  p > br {
+    display: none;
+  }
 
   @media (min-width: $vp-768) {
     p {
@@ -171,7 +171,7 @@
       font-size: 16px;
     }
 
-    p >  br {
+    p > br {
       display: block;
     }
   }
@@ -184,120 +184,120 @@
       line-height: 26px;
     }
 
-    p >  br {
+    p > br {
       display: none;
     }
   }
 }
 
 
+.faq__item.is-active .faq__element-wrapper {
+  padding: 22px 21px 20px 15px;
+  margin: 0 auto;
+  width: 290px;
+  background-color: $color-blue;
+  color: $color-default-white;
+  border: 2px solid $color-blue;
+  border-radius: 13px;
+}
 
-.faq__item.is-active {
-  .faq__element-wrapper {
-    padding: 22px 21px 20px 15px;
-    margin: 0 auto;
-    width: 290px;
-    background-color: $color-blue;
-    color: $color-default-white;
-    border: 2px solid $color-blue;
-    border-radius: 13px;
+.faq__item.is-active .faq__element-wrapper > .faq__element-content.accordion__content {
+  max-height: 101px;
+}
 
-    .faq__element-container > .faq__element-button {
-      background-color: $color-default-white;
-      color: $color-blue;
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button {
+  background-color: $color-default-white;
+  color: $color-blue;
+}
 
-      &::before {
-        background-color: $color-blue;
-      }
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button::before {
+  background-color: $color-blue;
+}
 
-      &::after {
-        background-color: transparent;
-      }
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button::after {
+  background-color: transparent;
+}
 
-      &:hover,
-      &:focus,
-      &:focus-visible {
-        background-color: transparent;
-        outline: none;
-        border: 1px solid $color-default-white;
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:hover,
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:focus,
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:focus-visible {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid $color-default-white;
+}
 
-        &::before {
-          background-color: $color-default-white;
-        }
-      }
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:hover::before,
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:focus::before,
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:focus-visible::before {
+  background-color: $color-default-white;
+}
 
-      &:active {
-        background-color: $color-default-white;
-        outline: none;
-        border: 1px solid transparent;
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:active {
+  background-color: $color-default-white;
+  outline: none;
+  border: 1px solid transparent;
+}
 
-        &::before {
-          background-color: $color-blue;
-        }
-      }
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:active::before {
+  background-color: $color-blue;
+}
 
-      &:disabled {
-        background-color: $color-disabled;
-        outline: none;
-        border: 1px solid transparent;
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:disabled {
+  background-color: $color-disabled;
+  outline: none;
+  border: 1px solid transparent;
+}
 
-        &::before {
-          background-color: $color-default-white;
-        }
-      }
-    }
+.faq__item.is-active .faq__element-wrapper > .faq__element-container > .faq__element-button:disabled::before {
+  background-color: $color-default-white;
+}
 
-    .faq__element-content.accordion__content {
-      max-height: 101px;
-    }
-  }
-
-  @media (min-width: $vp-768) {
-    .faq__element-wrapper {
-      width: 678px;
-      padding: 37px 32px 30px 30px;
-      border-radius: 16px;
-    }
-  }
-
-  @media (min-width: $vp-1440) {
-    .faq__element-wrapper {
-      width: 1028px;
-      padding: 43px 42px 40px 40px;
-    }
+@media (min-width: $vp-768) {
+  .faq__item.is-active .faq__element-wrapper {
+    width: 678px;
+    padding: 37px 32px 30px 30px;
+    border-radius: 16px;
   }
 }
 
-.faq__item:nth-of-type(4n) .faq__element-wrapper{
+@media (min-width: $vp-1440) {
+  .faq__item.is-active .faq__element-wrapper {
+    width: 1028px;
+    padding: 43px 42px 40px 40px;
+  }
+}
+
+.faq__item:nth-of-type(4n) .faq__element-wrapper {
   padding: 20px 21px 20px 15px;
 
   .accordion__button-wrapper .faq__element-button {
-    margin: 7px 0 0 0;
+    margin: 7px 0 0;
   }
 
-  .accordion__button-wrapper .faq__element-title > br.faq__element-title-br{
-      display: none;
-    }
+  .accordion__button-wrapper .faq__element-title > .faq__element-title-br {
+    display: none;
+  }
 
   @media (min-width: $vp-768) {
     padding: 30px 21px 30px 22px;
+
     .accordion__button-wrapper .faq__element-title > br {
       display: none;
     }
 
-    .accordion__button-wrapper .faq__element-title > br.faq__element-title-br{
+    .accordion__button-wrapper .faq__element-title > .faq__element-title-br {
       display: block;
     }
 
     .accordion__button-wrapper .faq__element-button {
-    margin: 0 0 0 0;
+      margin: 0;
     }
   }
 
   @media (min-width: $vp-1440) {
     padding: 40px 21px 40px 22px;
 
-    .accordion__button-wrapper .faq__element-title > br.faq__element-title-br{
+    .accordion__button-wrapper .faq__element-title > .faq__element-title-br {
       display: none;
     }
 
@@ -307,20 +307,21 @@
   }
 }
 
-.faq__item:last-of-type .faq__element-wrapper{
+.faq__item:last-of-type .faq__element-wrapper {
   padding: 20px 21px 20px 15px;
 
   .accordion__button-wrapper .faq__element-button {
-    margin: 16px 0 0 0;
+    margin: 16px 0 0;
   }
 
   @media (min-width: $vp-768) {
     padding: 30px 21px 30px 22px;
 
     .accordion__button-wrapper .faq__element-button {
-      margin: 0 0 0 0;
+      margin: 0;
     }
   }
+
   @media (min-width: $vp-1440) {
     padding: 40px 21px 40px 22px;
   }

@@ -24,138 +24,151 @@
   gap: 12px;
   border: none;
   outline: none;
+}
 
-  input,
-  textarea {
-    position: relative;
-    display: block;
-    width: 270px;
-    padding: 16px 25px 14px 25px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-radius: 8px;
-    color: $color-default-white;
-    background-color: transparent;
+.form__group input,
+.form__group textarea {
+  position: relative;
+  display: block;
+  width: 270px;
+  padding: 16px 25px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  color: $color-default-white;
+  background-color: transparent;
+}
 
-    &::before {
-      display: none;
-      position: absolute;
-      background-color: $color-default-white;
-      content: "";
-      opacity: 0.3;
-      width: 2px;
-      height: 18px;
-      top: 50%;
-      left: 0;
-    }
+.form__group input::before,
+.form__group textarea::before {
+  display: none;
+  position: absolute;
+  background-color: $color-default-white;
+  content: "";
+  opacity: 0.3;
+  width: 2px;
+  height: 18px;
+  top: 50%;
+  left: 0;
+}
 
-    &:hover {
-      border: 1px solid $color-default-white;
-      outline: none;
+.form__group input:hover,
+.form__group textarea:hover {
+  border: 1px solid $color-default-white;
+  outline: none;
+}
 
-      &::before {
-        display: none;
-      }
-    }
+.form__group input:hover::before,
+.form__group textarea:hover::before {
+  display: none;
+}
 
-    &:focus,
-    &:focus-visible,
-    &:active {
-      border: 1px solid $color-default-white;
-      outline: none;
+.form__group input:focus,
+.form__group textarea:focus,
+.form__group input:focus-visible,
+.form__group textarea:focus-visible,
+.form__group input:active,
+.form__group textarea:active {
+  border: 1px solid $color-default-white;
+  outline: none;
+}
 
-      &::before {
-        position: absolute;
-        display: block;
-        background-color: $color-default-white;
-        content: "";
-        opacity: 0.3;
-        width: 2px;
-        height: 18px;
-        top: 50%;
-        left: 0;
-      }
-    }
+.form__group input:focus::before,
+.form__group textarea:focus::before,
+.form__group input:focus-visible::before,
+.form__group textarea:focus-visible::before,
+.form__group input:active::before,
+.form__group textarea:active::before {
+  position: absolute;
+  display: block;
+  background-color: $color-default-white;
+  content: "";
+  opacity: 0.3;
+  width: 2px;
+  height: 18px;
+  top: 50%;
+  left: 0;
+}
 
-    &:disabled {
-      border: 1px solid rgba(255, 255, 255, 0.7);
-      background-color: rgba(169, 175, 183, 0.3);
+.form__group input:disabled,
+.form__group textarea:disabled {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(169, 175, 183, 0.3);
+}
 
-      &::before {
-        display: none;
-      }
-    }
-  }
+.form__group input:disabled::before,
+.form__group textarea:disabled::before {
+  display: none;
+}
 
-  .form__phone + input:not([class]) {
-    padding: 15px 25px 14px 25px;
-    &:hover {
-      padding: 15px 25px 14px 25px;
-    }
-    &:focus,
-    &:focus-visible,
-    &:active {
-      padding: 15px 25px 14px 25px;
-    }
-  }
+.form__group .form__phone + input:not([class]) {
+  padding: 15px 25px 14px;
+}
 
-  .form__message + textarea:not([class]) {
-    padding: 10px 25px 9px 25px;
-    &:hover {
-      padding: 10px 25px 9px 25px;
-    }
-    &:focus,
-    &:focus-visible,
-    &:active {
-      padding: 10px 25px 9px 25px;
-    }
-  }
+.form__group .form__phone + input:not([class]):hover,
+.form__group .form__phone + input:not([class]):focus,
+.form__group .form__phone + input:not([class]):focus-visible,
+.form__group .form__phone + input:not([class]):active {
+  padding: 15px 25px 14px;
+}
 
-  @media (min-width: $vp-768) {
+.form__group .form__message + textarea:not([class]) {
+  padding: 10px 25px 9px;
+}
+
+.form__group .form__message + textarea:not([class]):hover,
+.form__group .form__message + textarea:not([class]):focus,
+.form__group .form__message + textarea:not([class]):focus-visible,
+.form__group .form__message + textarea:not([class]):active {
+  padding: 10px 25px 9px;
+}
+
+@media (min-width: $vp-768) {
+  .form__group {
     width: 362px;
-
-    input,
-    textarea {
-      width: 362px;
-    }
-
-    .form__message + textarea:not([class]) {
-      padding: 7px 25px 6px 25px;
-        &:hover {
-          padding: 7px 25px 6px 25px;
-        }
-        &:focus,
-        &:focus-visible,
-        &:active {
-          padding: 7px 25px 6px 25px;
-      }
-    }
   }
 
-  @media (min-width: $vp-1440) {
+  .form__group input,
+  .form__group textarea {
+    width: 362px;
+  }
+
+  .form__group .form__message + textarea:not([class]) {
+    padding: 7px 25px 6px;
+  }
+
+  .form__group .form__message + textarea:not([class]):hover,
+  .form__group .form__message + textarea:not([class]):focus,
+  .form__group .form__message + textarea:not([class]):focus-visible,
+  .form__group .form__message + textarea:not([class]):active {
+    padding: 7px 25px 6px;
+  }
+}
+
+@media (min-width: $vp-1440) {
+  .form__group {
     width: 350px;
+  }
 
-    input,
-    textarea {
-      width: 350px;
-    }
+  .form__group input,
+  .form__group textarea {
+    width: 350px;
+  }
 
-    .form__message + textarea:not([class]) {
-      padding: 7px 25px 8px 25px;
-        &:hover {
-          padding: 7px 25px 8px 25px;
-        }
-        &:focus,
-        &:focus-visible,
-        &:active {
-          padding: 7px 25px 8px 25px;
-      }
-    }
+  .form__group .form__message + textarea:not([class]) {
+    padding: 7px 25px 8px;
+  }
+
+  .form__group .form__message + textarea:not([class]):hover,
+  .form__group .form__message + textarea:not([class]):focus,
+  .form__group .form__message + textarea:not([class]):focus-visible,
+  .form__group .form__message + textarea:not([class]):active {
+    padding: 7px 25px 8px;
   }
 }
 
 .form__group:nth-of-type(3n + 1) > .form__select-title {
   @media (min-width: $vp-1440) {
-    margin: -2px 0 -2px 0;
+    margin: -2px 0;
   }
 }
 
@@ -228,7 +241,7 @@
   position: relative;
   display: block;
   width: 260px;
-  padding: 16px 25px 15px 25px;
+  padding: 16px 25px 15px;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 8px;
   color: $color-default-white;
@@ -243,14 +256,14 @@
     right: 10px;
     width: 12px;
     height: 12px;
-    background-image: urlurl('data:image/svg+xml;utf8,<svg width="22" height="11" viewBox="0 0 22 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 1L11 10L1 1" stroke="currentColor"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg width="22" height="11" viewBox="0 0 22 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 1L11 10L1 1" stroke="currentColor"/></svg>');
 
     background-repeat: no-repeat;
     pointer-events: none;
     z-index: -1;
-    background-color: violet;
+    background-color: rgba(238, 130, 238, 1);
     background-size: contain;
-    }
+  }
 
   &:hover {
     border: 1px solid $color-default-white;
@@ -286,10 +299,9 @@
 .form__select-wrapper {
   position: relative;
   z-index: 1;
+
   select {
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
   }
 }
 
@@ -328,12 +340,12 @@
 
 .form__button {
   width: 261px;
-  margin: -1px 0 0 0;
+  margin: -1px 0 0;
   border: 1px solid $color-default-white;
 
   @media (min-width: $vp-768) {
     width: 353px;
-    margin: 6px 0 0 0;
+    margin: 6px 0 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -365,6 +377,6 @@
   margin: -2px 0 0 2px;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 0 0;
+    margin: 0;
   }
 }

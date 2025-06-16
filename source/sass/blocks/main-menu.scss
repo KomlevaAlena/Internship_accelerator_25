@@ -55,10 +55,8 @@
 }
 
 .main-nav__item.is-active {
-  .main-nav__button {
-    svg {
-      transform: rotate(180deg);
-    }
+  .main-nav__button > svg {
+    transform: rotate(180deg);
   }
 }
 

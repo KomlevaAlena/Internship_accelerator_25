@@ -1,4 +1,3 @@
-// modal-form.js
 export const modalForm = function modalDescription() {
   const openModalButton = document.getElementById('modal-open-button');
   const modalWindow = document.getElementById('modal-window');
@@ -6,7 +5,6 @@ export const modalForm = function modalDescription() {
   const tagBody = document.body;
   const modalWrapper = document.querySelector('.modal__wrapper');
 
-  // Если хотя бы один элемент не найден — выводим ошибку
   if (!openModalButton || !modalWindow || !closeModalButton || !modalWrapper) {
     console.error('One or more modal elements not found:', {
       openModalButton,
@@ -14,7 +12,7 @@ export const modalForm = function modalDescription() {
       closeModalButton,
       modalWrapper
     });
-    return; // Прекращаем выполнение, чтобы не было ошибок
+    return;
   }
 
   openModalButton.addEventListener('click', () => {

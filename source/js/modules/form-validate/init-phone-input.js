@@ -20,18 +20,6 @@ const onPhoneInputInput = (e) => {
     }
   });
 };
-
-// const onPhoneInputFocus = ({target}) => {
-//   if (!target.value) {
-//     target.value = baseCountryCode;
-//   }
-//   target.addEventListener('input', onPhoneInputInput);
-//   target.addEventListener('blur', onPhoneInputBlur);
-//   target.addEventListener('keydown', onPhoneInputKeydown);
-//   target.addEventListener('paste', onPhoneInputPaste);
-//   target.addEventListener('click', onPhoneInputClick);
-// };
-
 const onPhoneInputClick = (e) => {
   if (e.target.selectionStart < 4) {
     e.preventDefault();

@@ -85,68 +85,58 @@
   margin: 0;
   padding: 0;
   gap: 8px;
+}
 
-  input,
-  textarea,
-  select {
-    position: relative;
-    display: block;
-    width: 260px;
-    padding: 16px 25px;
-    border: 1px solid rgba(72, 72, 72, 0.7);
-    border-radius: 8px;
-    color: $color-main;
-    background-color: transparent;
+.modal-form__group input,
+.modal-form__group textarea,
+.modal-form__group select {
+  position: relative;
+  display: block;
+  width: 260px;
+  padding: 16px 25px;
+  border: 1px solid rgba(72, 72, 72, 0.7);
+  border-radius: 8px;
+  color: $color-main;
+  background-color: transparent;
+}
 
-    // &:before {
-    //   display: none;
-    //   position: absolute;
-    //   background-color: $color-default-white;
-    //   content:'';
-    //   opacity: 0.3;
-    //   width: 2px;
-    //   height: 18px;
-    //   top: 50%;
-    //   left: 0;
-    // }
+.modal-form__group input:hover,
+.modal-form__group textarea:hover,
+.modal-form__group select:hover {
+  border: 1px solid $color-main;
+  outline: none;
+}
 
-    &:hover {
-      border: 1px solid $color-main;
-      outline: none;
+.modal-form__group input:hover::before,
+.modal-form__group textarea:hover::before,
+.modal-form__group select:hover::before {
+  display: none;
+}
 
-      &::before {
-        display: none;
-      }
-    }
+.modal-form__group input:focus,
+.modal-form__group textarea:focus,
+.modal-form__group select:focus,
+.modal-form__group input:focus-visible,
+.modal-form__group textarea:focus-visible,
+.modal-form__group select:focus-visible,
+.modal-form__group input:active,
+.modal-form__group textarea:active,
+.modal-form__group select:active {
+  border: 1px solid $color-main;
+  outline: none;
+}
 
-    &:focus,
-    &:focus-visible,
-    &:active {
-      border: 1px solid $color-main;
-      outline: none;
+.modal-form__group input:disabled,
+.modal-form__group textarea:disabled,
+.modal-form__group select:disabled {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(169, 175, 183, 0.3);
+}
 
-      // &:before {
-      //   position: absolute;
-      //   display: block;
-      //   background-color: $color-default-white;
-      //   content:'';
-      //   opacity: 0.3;
-      //   width: 2px;
-      //   height: 18px;
-      //   top: 50%;
-      //   left: 0;
-      // }
-    }
-
-    &:disabled {
-      border: 1px solid rgba(255, 255, 255, 0.7);
-      background-color: rgba(169, 175, 183, 0.3);
-
-      &::before {
-        display: none;
-      }
-    }
-  }
+.modal-form__group input:disabled::before,
+.modal-form__group textarea:disabled::before,
+.modal-form__group select:disabled::before {
+  display: none;
 }
 
 .select-title,

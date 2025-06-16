@@ -65,7 +65,7 @@
 
 .reviews__wrapper-button {
   position: absolute;
-  content: '';
+  content: "";
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -235,8 +235,8 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    margin: 20px 0 0 0;
-    padding: 0 0 0 0;
+    margin: 20px 0 0;
+    padding: 0;
     list-style-type: none;
     padding-inline-start: 0;
     width: 561px;
@@ -265,7 +265,7 @@
     flex-direction: row;
     align-items: center;
     margin: 0;
-    padding: 0 0 62px 0;
+    padding: 0 0 62px;
     width: 678px;
   }
 

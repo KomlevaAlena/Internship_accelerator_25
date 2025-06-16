@@ -1,12 +1,12 @@
 .grant {
   width: 100%;
   margin: 0 auto;
-  padding: 71px 0 50px 0;
+  padding: 71px 0 50px;
   background-color: $color-blue;
   color: $color-default-white;
 
   @media (min-width: $vp-768) {
-    padding: 100px 0 50px 0;
+    padding: 100px 0 50px;
   }
 
   @media (min-width: $vp-1440) {
