@@ -14,14 +14,23 @@
 
   @media (min-width: $vp-768) {
     width: 678px;
-    padding: 32px;
+    padding: 37px 32px 30px 30px;
+    border-radius: 16px;
   }
 
   @media (min-width: $vp-1440) {
     width: 1028px;
     padding: 42px;
+    border-radius: 16px;
   }
 }
+
+// .faq__item:nth-of-type(4n) > .faq__element-wrapper {
+//   @media (min-width: $vp-768) {
+//     padding: 37px 32px 30px 30px;
+//   }
+// }
+
 
 .faq__element-title {
   display: block;
@@ -33,7 +42,7 @@
   font-weight: 400;
 
   @media (min-width: $vp-768) {
-    width: 456px;
+    width: 574px;
     font-size: 22px;
     line-height: 26px;
   }
@@ -135,6 +144,10 @@
       background-color: $color-default-white;
     }
   }
+
+  @media (min-width: $vp-768) {
+    margin: -7px 0 0 0;
+  }
 }
 
 .faq__element-description {
@@ -150,9 +163,18 @@
     font-weight: 400;
   }
 
+  p >  br {
+      display: none;
+    }
+
   @media (min-width: $vp-768) {
     p {
       width: 614px;
+      font-size: 16px;
+    }
+
+    p >  br {
+      display: block;
     }
   }
 
@@ -160,8 +182,14 @@
     p {
       width: 944px;
     }
+
+    p >  br {
+      display: none;
+    }
   }
 }
+
+
 
 .faq__item.is-active {
   .faq__element-wrapper {
@@ -217,12 +245,17 @@
         }
       }
     }
+
+    .faq__element-content.accordion__content {
+      max-height: 101px;
+    }
   }
 
   @media (min-width: $vp-768) {
     .faq__element-wrapper {
       width: 678px;
-      padding: 32px;
+      padding: 37px 32px 30px 30px;
+      border-radius: 16px;
     }
   }
 
@@ -240,6 +273,25 @@
   .accordion__button-wrapper .faq__element-button {
     margin: 7px 0 0 0;
   }
+
+  .accordion__button-wrapper .faq__element-title > br.faq__element-title-br{
+      display: none;
+    }
+
+  @media (min-width: $vp-768) {
+    padding: 30px 21px 30px 22px;
+    .accordion__button-wrapper .faq__element-title > br {
+      display: none;
+    }
+
+    .accordion__button-wrapper .faq__element-title > br.faq__element-title-br{
+      display: block;
+    }
+
+    .accordion__button-wrapper .faq__element-button {
+    margin: 0 0 0 0;
+  }
+  }
 }
 
 .faq__item:last-of-type .faq__element-wrapper{
@@ -247,5 +299,13 @@
 
   .accordion__button-wrapper .faq__element-button {
     margin: 16px 0 0 0;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 30px 21px 30px 22px;
+
+    .accordion__button-wrapper .faq__element-button {
+      margin: 0 0 0 0;
+    }
   }
 }
