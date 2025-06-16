@@ -5,8 +5,9 @@
   width: max-content;
 
   @media (min-width: $vp-768) {
-    margin: auto 0 auto auto;
-    padding: 0;
+    // margin: auto 0 auto auto;
+    margin:  0 0 0;
+    padding: 37px 0 0 65px;
   }
 }
 
